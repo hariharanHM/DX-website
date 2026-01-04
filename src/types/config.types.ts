@@ -48,8 +48,9 @@ export type FontsConfig = {
 export type StyleConfig = {
   theme: Theme;
   neutral: NeutralColor;
-  brand: Schemes;
-  accent: Schemes;
+  // Allow "custom" so we can drive brand/accent purely via CSS variables (see custom.css)
+  brand: Schemes | "custom";
+  accent: Schemes | "custom";
   solid: SolidType;
   solidStyle: SolidStyle;
   border: BorderStyle;
