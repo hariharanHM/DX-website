@@ -93,8 +93,8 @@ const fonts: FontsConfig = {
 const style: StyleConfig = {
   theme: "dark", // dark | light | system
   neutral: "slate", // sand | gray | slate | custom
-  brand: "custom", // use custom brand color defined via CSS vars (see custom.css)
-  accent: "custom", // use same custom color for accent
+  brand: "slate", // use custom brand color defined via CSS vars (see custom.css)
+  accent: "slate", // use same custom color for accent
   solid: "contrast", // color | contrast
   solidStyle: "plastic", // flat | plastic
   border: "playful", // rounded | playful | conservative
