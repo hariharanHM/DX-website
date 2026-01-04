@@ -2,10 +2,12 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 import { Fade, Flex, Line, Row, ToggleButton } from "@once-ui-system/core";
 
-import { routes, display, person } from "@/resources";
+import { routes, display } from "@/resources";
+import { withBasePath } from "@/utils/withBasePath";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
 
@@ -76,18 +78,24 @@ export const Header = () => {
         fillWidth
         padding="8"
         horizontal="center"
+        vertical="center"
         data-border="rounded"
         s={{
           position: "fixed",
         }}
       >
-        <Row
-          paddingLeft="12"
-          fillWidth
-          vertical="center"
-          textVariant="body-default-s"
-        >
-          {display.location && <Row s={{ hide: true }}>{person.location}</Row>}
+        {/* Logo on the left - part of the header row so it scrolls/sticks with navbar */}
+        <Row paddingLeft="12" fillWidth vertical="center">
+          <a href="/" style={{ display: "flex", alignItems: "center" }}>
+            <Image
+              src={withBasePath("/images/DesignerX-logo.png")}
+              alt="DesignerX logo"
+              width={160}
+              height={40}
+              priority
+              style={{ objectFit: "contain" }}
+            />
+          </a>
         </Row>
         <Row fillWidth horizontal="center">
           <Row
@@ -161,17 +169,7 @@ export const Header = () => {
           </Row>
         </Row>
         <Flex fillWidth horizontal="end" vertical="center">
-          <Flex
-            paddingRight="12"
-            horizontal="end"
-            vertical="center"
-            textVariant="body-default-s"
-            gap="20"
-          >
-            <Flex s={{ hide: true }}>
-              {display.time && <TimeDisplay timeZone={person.location} />}
-            </Flex>
-          </Flex>
+          {/* Right spacer to keep navbar centered */}
         </Flex>
       </Row>
     </>
