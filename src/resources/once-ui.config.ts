@@ -92,9 +92,9 @@ const fonts: FontsConfig = {
 // default customization applied to the HTML in the main layout.tsx
 const style: StyleConfig = {
   theme: "dark", // dark | light | system
-  neutral: "neutral", // sand | gray | slate | custom
-  brand: "brand", // use custom brand color defined via CSS vars (see custom.css)
-  accent: "accent", // use same custom color for accent
+  neutral: "slate", // sand | gray | slate | custom
+  brand: "custom", // use custom brand color defined via CSS vars (see custom.css)
+  accent: "custom", // use same custom color for accent
   solid: "contrast", // color | contrast
   solidStyle: "plastic", // flat | plastic
   border: "playful", // rounded | playful | conservative
