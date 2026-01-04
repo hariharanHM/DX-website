@@ -14,43 +14,27 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     quote:
-      "We saw a 972.7% growth in just 3 months. The team's data-driven approach and creative campaigns completely transformed our digital presence.",
-    author: "Sarah Johnson",
-    role: "Marketing Director",
-    company: "TechStart Inc.",
-    result: "972.7% Growth",
+      "Working with DesignerX was a smooth and strategic experience. They understood our brand vision deeply and translated it into a strong, confident logo for DarkThread Co. Beyond design, their marketing consultation helped us structure our ad approach and improve lead quality. The guidance was practical, data-driven, and focused on long-term growth. It truly felt like a partnership rather than a service.",
+    author: "Vaibhav",
+    role: "Founder",
+    company: "DarkThread Co",
+    result: "Clear Brand Positioning",
   },
   {
     quote:
-      "Their Meta Ads strategy generated 620% more engagement and 1.9K organic reach. Best ROI we've ever had from a marketing agency.",
-    author: "Michael Chen",
-    role: "CEO",
-    company: "Fashion Retail Co.",
-    result: "620% Engagement",
+      "DesignerX handled our content shoots, graphic design, and overall marketing strategy with a lot of clarity. The visuals felt premium and consistent, and the content was aligned with what our customers actually respond to. Their strategic input helped us plan better instead of posting randomly. The process was professional, smooth, and effective.",
+    author: "Sriram Karthik",
+    role: "Founder",
+    company: "KTS Fabrics",
+    result: "Premium visuals, clear marketing direction",
   },
   {
     quote:
-      "From SEO to social media management, they handle everything. Our leads increased by 300% and conversion rates doubled.",
-    author: "Emma Rodriguez",
-    role: "Business Owner",
-    company: "Local Services",
-    result: "300% More Leads",
-  },
-  {
-    quote:
-      "Professional, responsive, and results-oriented. They helped us scale our ad spend while maintaining strong ROAS.",
-    author: "James Wilson",
-    role: "Growth Lead",
-    company: "SaaS Startup",
-    result: "10x Ad Scale",
-  },
-  {
-    quote:
-      "The SEO results exceeded our expectations. We went from page 5 to ranking #1 for our main keywords in under 6 months.",
-    author: "Lisa Thompson",
-    role: "Operations Manager",
-    company: "E-commerce Plus",
-    result: "#1 Google Ranking",
+      "DesignerX played a key role in strengthening our digital presence. From content shoots and video editing to scriptwriting and Meta ads strategy, everything was well planned and professionally executed. Their understanding of educational marketing and social media content helped us communicate our programs clearly and reach the right audience. The consistency and strategic approach made a noticeable difference.",
+    author: "Maayan Skill Development Center",
+    role: "Team",
+    company: "Coimbatore",
+    result: "Improved reach, better lead quality",
   },
 ];
 
