@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import {
   Column,
   Row,
@@ -9,7 +10,6 @@ import {
   Avatar,
   Button,
   IconButton,
-  Badge,
 } from "@once-ui-system/core";
 import { about, person, social, home } from "@/resources";
 import { withBasePath } from "@/utils/withBasePath";
@@ -33,23 +33,18 @@ export const HeroSection = () => {
       paddingX="l"
     >
       <Row fillWidth className={styles.heroContent}>
-        {/* Left: headline and intro copy */}
+        {/* Left: logo, headline and intro copy */}
         <Column gap="m" align="start" className={styles.heroCopy}>
-          {home.featured.display && (
-            <Row paddingBottom="12">
-              <Badge
-                background="brand-alpha-weak"
-                paddingX="12"
-                paddingY="4"
-                onBackground="neutral-strong"
-                textVariant="label-default-s"
-                arrow={false}
-                href={home.featured.href}
-              >
-                <Row paddingY="2">{home.featured.title}</Row>
-              </Badge>
-            </Row>
-          )}
+          <Row vertical="center">
+            <Image
+              src={withBasePath("/images/DesignerX-logo.png")}
+              alt="DesignerX logo"
+              width={170}
+              height={95}
+              priority={false}
+              style={{ objectFit: "contain", display: "block" }}
+            />
+          </Row>
           <Heading
             variant="display-strong-m"
             align="left"
@@ -127,7 +122,7 @@ export const HeroSection = () => {
               wrap
               horizontal="center"
               paddingTop="12"
-              className={styles.socialLinks}
+              className={`${styles.socialLinks} `}
             >
               {social
                 .filter((item) => item.essential)
@@ -189,7 +184,7 @@ export const HeroSection = () => {
             wrap
             horizontal="center"
             paddingTop="12"
-            className={styles.heroContactButtons}
+            className={`${styles.heroContactButtons} `}
           >
             <Button
               href={`mailto:${person.email}`}

@@ -71,7 +71,7 @@ export const Header = () => {
       />
       <Row
         fitHeight
-        className={styles.position}
+        className={`${styles.position} brand-card`}
         position="sticky"
         as="header"
         zIndex={9}
@@ -84,19 +84,8 @@ export const Header = () => {
           position: "fixed",
         }}
       >
-        {/* Logo on the left - part of the header row so it scrolls/sticks with navbar */}
-        <Row paddingLeft="12" fillWidth vertical="center">
-          <a href="/" style={{ display: "flex", alignItems: "center" }}>
-            <Image
-              src={withBasePath("/images/DesignerX-logo.png")}
-              alt="DesignerX logo"
-              width={160}
-              height={40}
-              priority
-              style={{ objectFit: "contain" }}
-            />
-          </a>
-        </Row>
+        {/* Left spacer to keep navbar centered */}
+        <Row paddingLeft="12" fillWidth vertical="center" />
         <Row fillWidth horizontal="center">
           <Row
             background="page"
@@ -106,6 +95,7 @@ export const Header = () => {
             padding="4"
             horizontal="center"
             zIndex={1}
+            style={{ backgroundColor: "var(--scheme-brand-800)" }}
           >
             <Row
               gap="4"

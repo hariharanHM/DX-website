@@ -39,7 +39,7 @@ const testimonials: Testimonial[] = [
 ];
 
 const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
-  <div className={styles.card}>
+  <div className={`${styles.card} brand-card`}>
     {testimonial.result && (
       <div className={styles.resultBadge}>
         <Text variant="label-default-s">
