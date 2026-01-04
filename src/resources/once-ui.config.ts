@@ -91,14 +91,14 @@ const fonts: FontsConfig = {
 
 // default customization applied to the HTML in the main layout.tsx
 const style: StyleConfig = {
-  theme: "dark", // dark | light | system - using dark for modern gradient look
-  neutral: "slate", // sand | gray | slate | custom - slate for premium feel
-  brand: "violet", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
-  accent: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom - cyan for blue gradient
+  theme: "dark", // dark | light | system
+  neutral: "slate", // sand | gray | slate | custom
+  brand: "custom", // use custom brand color defined via CSS vars (see custom.css)
+  accent: "custom", // use same custom color for accent
   solid: "contrast", // color | contrast
-  solidStyle: "plastic", // flat | plastic - plastic for modern gradient feel
-  border: "playful", // rounded | playful | conservative - playful for rounded cards
-  surface: "translucent", // filled | translucent - translucent for glass effect
+  solidStyle: "plastic", // flat | plastic
+  border: "playful", // rounded | playful | conservative
+  surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
   scaling: "100", // 90 | 95 | 100 | 105 | 110
 };
