@@ -9,12 +9,12 @@ import {
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Your",
-  lastName: "Agency",
-  name: "Name",
-  role: "Performance Marketing & Growth",
+  firstName: "Hariharan",
+  lastName: "C",
+  name: "Hariharan C",
+  role: "Designer & Marketing Strategist",
   avatar: "/images/avatar.jpg",
-  email: "hello@digitalagency.com",
+  email: "designerx1111@gmail.com",
   // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'.
   // Use your own time zone (for India, "Asia/Kolkata").
   location: "Asia/Kolkata",
@@ -40,19 +40,13 @@ const social: Social = [
   {
     name: "Facebook",
     icon: "facebook",
-    link: "https://www.facebook.com/once_ui/",
+    link: "https://www.facebook.com/profile.php?id=61579692912958",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "https://www.linkedin.com/in/hariharan-c-4159121a7",
     essential: true,
   },
 ];
@@ -61,9 +55,9 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name} – We Create Brands That Grow Fast`,
-  description: `Data-driven digital marketing agency specializing in Meta Ads, SEO, Social Media, and Content Creation for growing businesses`,
-  headline: <>We Create Brands That Grow Fast</>,
+  title: `${person.name} – Quality-Driven Partnerships`,
+  description: `We work with a limited number of clients at a time to ensure strategic focus, quality execution, and measurable marketing outcomes.`,
+  headline: <>Quality-Driven Partnerships</>,
   featured: {
     display: true,
     title: (
@@ -80,8 +74,8 @@ const home: Home = {
   },
   subline: (
     <>
-      End-to-end Meta advertising, Social Media Management, Content Creation,
-      and SEO — driving measurable growth with data and creative execution.
+      We work with a limited number of clients at a time to ensure strategic
+      focus, quality execution, and measurable marketing outcomes.
     </>
   ),
 };

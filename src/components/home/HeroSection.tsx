@@ -15,10 +15,10 @@ import { about, person, social, home } from "@/resources";
 import { withBasePath } from "@/utils/withBasePath";
 import styles from "./HomeSections.module.scss";
 
-// TODO: Update these to your real business number.
-const CONTACT_PHONE_DISPLAY = "+91 00000 00000";
+// Business contact number
+const CONTACT_PHONE_DISPLAY = "+91 63813 46237";
 // Digits only, including country code (used for https://wa.me/<number>)
-const WHATSAPP_NUMBER = "910000000000";
+const WHATSAPP_NUMBER = "916381346237";
 
 export const HeroSection = () => {
   if (!about.intro.display) return null;
