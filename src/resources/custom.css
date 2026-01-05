@@ -36,3 +36,9 @@
   --scheme-accent-600-30: rgba(169, 178, 37, 0.3);
   --scheme-accent-600-50: rgba(169, 178, 37, 0.5);
 }
+
+/* Brand background cards: ensure readable text on light brand color in all themes */
+.brand-card,
+.brand-card * {
+  color: #000 !important;
+}

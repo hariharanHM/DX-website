@@ -51,6 +51,7 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
 
   return (
     <Column
+      className="brand-card"
       overflow="hidden"
       fillWidth
       padding="xl"
@@ -60,6 +61,7 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
       align="center"
       background="surface"
       border="neutral-alpha-weak"
+      style={{ backgroundColor: "var(--scheme-brand-800)" }}
       {...flex}
     >
       <Background
@@ -172,7 +174,18 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
           </div>
           <div className="clear">
             <Row height="48" vertical="center">
-              <Button id="mc-embedded-subscribe" value="Subscribe" size="m" fillWidth>
+              <Button
+                id="mc-embedded-subscribe"
+                value="Subscribe"
+                size="m"
+                fillWidth
+                variant="primary"
+                style={{
+                  backgroundColor: "var(--scheme-brand-800)",
+                  borderColor: "var(--scheme-brand-800)",
+                  color: "var(--neutral-0)",
+                }}
+              >
                 Subscribe
               </Button>
             </Row>

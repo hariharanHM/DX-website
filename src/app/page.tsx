@@ -46,32 +46,12 @@ export default function Home() {
         <HeroSection />
       </RevealFx>
 
-      {/* Services (immediately after hero) */}
-      <Services />
-
-      {/* Testimonials */}
-      <Testimonials />
-
-      {/* Featured Projects */}
-      <Column
-        id="projects"
-        fillWidth
-        maxWidth="m"
-        gap="24"
-        marginBottom="l"
-        horizontal="center"
-      >
-        <Row fillWidth paddingLeft="l" paddingTop="24">
-          <Heading as="h2" variant="display-strong-xs" wrap="balance">
-            Featured Projects
-          </Heading>
-        </Row>
-        <Projects range={[1, 4]} />
-      </Column>
-
-      {/* Customized Subscription Model */}
+      {/* Customized Subscription Model (above services) */}
       <Column fillWidth maxWidth="l" gap="l" paddingX="l" s={{ paddingX: "m" }}>
-        <div className={styles.serviceCard}>
+        <div
+          className={`${styles.serviceCard} brand-card`}
+          style={{ backgroundColor: "var(--scheme-brand-800)" }}
+        >
           <div className={styles.gradientAccent} />
           <div className={styles.serviceInner}>
             {/* Left: content */}
@@ -202,6 +182,29 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </Column>
+
+      {/* Services */}
+      <Services />
+
+      {/* Testimonials */}
+      <Testimonials />
+
+      {/* Featured Projects */}
+      <Column
+        id="projects"
+        fillWidth
+        maxWidth="m"
+        gap="24"
+        marginBottom="l"
+        horizontal="center"
+      >
+        <Row fillWidth paddingLeft="l" paddingTop="24">
+          <Heading as="h2" variant="display-strong-xs" wrap="balance">
+            Featured Projects
+          </Heading>
+        </Row>
+        <Projects range={[1, 4]} />
       </Column>
 
       {/* Newsletter */}
