@@ -138,13 +138,13 @@ export const Header = () => {
               </Row>
 
               {/* Projects (in-page anchor) */}
-              <Row s={{ hide: true }}>
+              {/* <Row s={{ hide: true }}>
                 <ToggleButton
                   prefixIcon="briefcase"
                   href="/#projects"
                   label="Projects"
                 />
-              </Row>
+              </Row> */}
               <Row hide s={{ hide: false }}>
                 <ToggleButton prefixIcon="briefcase" href="/#projects" />
               </Row>

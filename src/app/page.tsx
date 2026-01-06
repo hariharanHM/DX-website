@@ -74,9 +74,10 @@ export default function Home() {
               </div>
 
               <Text variant="body-default-l" onBackground="neutral-weak">
-                We do not offer fixed, one-size-fits-all packages. Each brand has different
-                goals, audiences, and growth stages. Our subscription plans are custom-built
-                based on your marketing objectives, content requirements, and execution scope.
+                We do not offer fixed, one-size-fits-all packages. Each brand
+                has different goals, audiences, and growth stages. Our
+                subscription plans are custom-built based on your marketing
+                objectives, content requirements, and execution scope.
               </Text>
 
               <ul className={styles.featureList}>
@@ -93,10 +94,7 @@ export default function Home() {
                       loading="lazy"
                     />
                   </span>
-                  <Text
-                    variant="body-default-m"
-                    onBackground="neutral-medium"
-                  >
+                  <Text variant="body-default-m" onBackground="neutral-medium">
                     Strategically aligned marketing efforts
                   </Text>
                 </li>
@@ -113,10 +111,7 @@ export default function Home() {
                       loading="lazy"
                     />
                   </span>
-                  <Text
-                    variant="body-default-m"
-                    onBackground="neutral-medium"
-                  >
+                  <Text variant="body-default-m" onBackground="neutral-medium">
                     Focused creative execution
                   </Text>
                 </li>
@@ -133,10 +128,7 @@ export default function Home() {
                       loading="lazy"
                     />
                   </span>
-                  <Text
-                    variant="body-default-m"
-                    onBackground="neutral-medium"
-                  >
+                  <Text variant="body-default-m" onBackground="neutral-medium">
                     Flexible scalability based on performance
                   </Text>
                 </li>
@@ -153,10 +145,7 @@ export default function Home() {
                       loading="lazy"
                     />
                   </span>
-                  <Text
-                    variant="body-default-m"
-                    onBackground="neutral-medium"
-                  >
+                  <Text variant="body-default-m" onBackground="neutral-medium">
                     Measurable and outcome-driven results
                   </Text>
                 </li>
@@ -167,8 +156,9 @@ export default function Home() {
                 onBackground="neutral-weak"
                 style={{ marginTop: "0.75rem" }}
               >
-                Our subscriptions are designed as long-term partnerships, ensuring
-                consistent quality, dedicated attention, and sustainable brand growth.
+                Our subscriptions are designed as long-term partnerships,
+                ensuring consistent quality, dedicated attention, and
+                sustainable brand growth.
               </Text>
             </div>
 
@@ -191,7 +181,7 @@ export default function Home() {
       <Testimonials />
 
       {/* Featured Projects */}
-      <Column
+      {/* <Column
         id="projects"
         fillWidth
         maxWidth="m"
@@ -205,7 +195,7 @@ export default function Home() {
           </Heading>
         </Row>
         <Projects range={[1, 4]} />
-      </Column>
+      </Column> */}
 
       {/* Newsletter */}
       <Mailchimp />

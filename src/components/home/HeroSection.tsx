@@ -137,7 +137,9 @@ export const HeroSection = () => {
                             label={item.name}
                             size="m"
                             variant="secondary"
-                            className={styles.socialButton}
+                            className={`${styles.socialButton} ${styles[
+                              item.name.toLowerCase().replace(/\s+/g, "")
+                            ]}`}
                           />
                         </Row>
                         <Row hide s={{ hide: false }}>
@@ -146,7 +148,9 @@ export const HeroSection = () => {
                             href={item.link}
                             icon={item.icon}
                             variant="secondary"
-                            className={styles.socialButton}
+                            className={`${styles.socialButton} ${styles[
+                              item.name.toLowerCase().replace(/\s+/g, "")
+                            ]}`}
                           />
                         </Row>
                       </React.Fragment>
@@ -192,7 +196,7 @@ export const HeroSection = () => {
               variant="secondary"
               prefixIcon="email"
               label={person.email}
-              className={styles.ctaButton}
+              className={`${styles.ctaButton} ${styles.emailButton}`}
             />
             <Button
               href={`https://wa.me/${WHATSAPP_NUMBER}`}

@@ -24,11 +24,10 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Get Marketing Insights That Actually Work</>,
+  title: <>Let’s Build a Scalable Marketing System</>,
   description: (
     <>
-      Join 500+ businesses receiving actionable tips on Meta Ads, SEO, and
-      growth strategies delivered monthly.
+      Book a strategy call and get clarity on what your brand needs next.
     </>
   ),
 };

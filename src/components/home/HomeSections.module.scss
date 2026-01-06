@@ -246,6 +246,34 @@
 }
 
 .socialLinks {
+  /* Target specific social buttons (Facebook / LinkedIn) to override the
+     brand color variable without affecting other CTAs (e.g., Call/WhatsApp) */
+  .facebook,
+  .linkedin {
+    --scheme-brand-800: #d3db62; /* base color for FB / LinkedIn */
+  }
+  /* Force the visible button background/border/color for library buttons
+     which may apply styles on nested elements or different tokens. */
+  .facebook,
+  .facebook button,
+  .facebook [role="button"],
+  .facebook .once-ui-button,
+  .linkedin,
+  .linkedin button,
+  .linkedin [role="button"],
+  .linkedin .once-ui-button {
+    background-color: var(--scheme-brand-800) !important;
+    border-color: var(--scheme-brand-800) !important;
+    color: #000 !important;
+  }
+
+  .facebook svg,
+  .facebook .icon,
+  .linkedin svg,
+  .linkedin .icon {
+    fill: currentColor !important;
+    color: inherit !important;
+  }
   .socialButton {
     transition: all var(--transition-micro-medium);
     position: relative;
@@ -369,6 +397,26 @@
   &:active {
     transform: translateY(-1px) scale(0.98);
   }
+}
+
+/* Email CTA only: use the same brand color override as requested */
+.emailButton {
+  --scheme-brand-800: #d3db62;
+}
+/* also force email CTA visual styles in case the Button implementation
+   styles nested elements or different tokens */
+.emailButton,
+.emailButton button,
+.emailButton [role="button"],
+.emailButton .once-ui-button {
+  background-color: var(--scheme-brand-800) !important;
+  border-color: var(--scheme-brand-800) !important;
+  color: #000 !important;
+}
+.emailButton svg,
+.emailButton .icon {
+  fill: currentColor !important;
+  color: inherit !important;
 }
 
 @keyframes pulse-ring {
