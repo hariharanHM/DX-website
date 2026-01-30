@@ -81,9 +81,9 @@ export const iconLibrary: Record<string, IconType> = {
   reddit: FaReddit,
   telegram: FaTelegram,
   instagram: FaInstagram,
-  globe: HiOutlineGlobeAsiaAustralia,
   sparkle: HiOutlineSparkles,
 };
+nom
 
 export type IconLibrary = typeof iconLibrary;
 export type IconName = keyof IconLibrary;
