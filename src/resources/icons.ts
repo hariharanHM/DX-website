@@ -83,7 +83,6 @@ export const iconLibrary: Record<string, IconType> = {
   instagram: FaInstagram,
   sparkle: HiOutlineSparkles,
 };
-nom
 
 export type IconLibrary = typeof iconLibrary;
 export type IconName = keyof IconLibrary;
