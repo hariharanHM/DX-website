@@ -29,7 +29,7 @@ const services: Service[] = [
       "We help brands grow with data-driven digital marketing strategies designed for visibility, engagement, and consistent lead generation. Our marketing-first approach ensures every creative decision supports measurable business outcomes.",
     icon: "rocket",
     href: "/work/digital-marketing",
-    image: "/images/projects/project-01/cover-01.jpg",
+    image: "/images/projects/project-01/service-digital-marketing.jpg",
     features: [
       { text: "Digital Marketing Strategy & Planning", icon: "fb-verified" },
       { text: "Social Media Marketing & Management", icon: "fb-verified" },
@@ -44,7 +44,7 @@ const services: Service[] = [
       "We create strong, cohesive brand systems that support long-term recognition and trust, ensuring your brand communicates with clarity and consistency.",
     icon: "sparkle",
     href: "/work/brand-strategy",
-    image: "/images/projects/project-01/cover-02.jpg",
+    image: "/images/projects/project-01/service-brand-strategy.jpg",
     features: [
       { text: "Brand Identity Design", icon: "fb-verified" },
       { text: "Logo Design & Brand Guidelines", icon: "fb-verified" },
@@ -56,9 +56,9 @@ const services: Service[] = [
     title: "Website Design & Development",
     description:
       "We design conversion-focused websites that align with your marketing goals and provide seamless user experiences across all platforms.",
-    icon: "code",
+    icon: "globe",
     href: "/work/website-design",
-    image: "/images/projects/project-01/cover-03.jpg",
+    image: "/images/projects/project-01/service-website-design.jpg",
     features: [
       { text: "UI/UX Design", icon: "fb-verified" },
       { text: "Custom Website Design & Development", icon: "fb-verified" },
@@ -72,7 +72,7 @@ const services: Service[] = [
       "We develop high-quality, search-optimized content that strengthens your brand voice while supporting digital marketing performance.",
     icon: "document",
     href: "/work/content-seo",
-    image: "/images/projects/project-01/cover-04.jpg",
+    image: "/images/projects/project-01/service-content-seo.jpg",
     features: [
       { text: "SEO Content Writing", icon: "fb-verified" },
       { text: "Website & Landing Page Content", icon: "fb-verified" },
@@ -85,7 +85,7 @@ const services: Service[] = [
       "We produce refined, high-impact video content crafted for marketing, advertising, and brand storytelling.",
     icon: "play",
     href: "/work/video-production",
-    image: "/images/projects/project-01/cover-01.jpg",
+    image: "/images/projects/project-01/service-video-production.jpg",
     features: [
       { text: "Short-Form Videos (Reels, Shorts & Ads)", icon: "fb-verified" },
       { text: "Brand & Promotional Videos", icon: "fb-verified" },
@@ -96,9 +96,9 @@ const services: Service[] = [
     title: "Creative Direction & Marketing Consulting",
     description:
       "We partner with brands as strategic advisors, providing creative leadership and marketing guidance aligned with growth objectives.",
-    icon: "lightbulb",
+    icon: "sparkle",
     href: "/work/consulting",
-    image: "/images/projects/project-01/cover-02.jpg",
+    image: "/images/projects/project-01/service-consulting.jpg",
     features: [
       { text: "Creative & Marketing Direction", icon: "fb-verified" },
       { text: "Campaign & Ad Creative Guidance", icon: "fb-verified" },
