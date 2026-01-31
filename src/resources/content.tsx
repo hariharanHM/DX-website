@@ -100,304 +100,108 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        {person.name} is a digital marketing specialist focused on helping small
-        and mid‑size businesses grow through measurable results. From
-        performance ads and SEO to email and funnel optimisation, the goal is
-        always the same: more qualified leads and better ROI.
+        DesignerX is a digital marketing and design studio helping brands solve real business problems with measurable results. We specialize in strategic brand positioning, high-performing campaigns, and data-driven growth — all built on the belief that good design and marketing should be practical, scalable, and honest.
       </>
     ),
   },
-  work: {
-    display: true, // set to false to hide this section
-    title: "Experience & results",
-    experiences: [
+  story: {
+    display: true,
+    title: "Our Story",
+    description: (
+      <>
+        DesignerX was founded with a simple belief — good design and marketing should be practical, measurable, and scalable. What started as a solo creative journey has evolved into a growing design studio working with brands across industries. We partner with businesses that value clarity, quality execution, and real results over noise and shortcuts.
+      </>
+    ),
+  },
+  team: {
+    display: true,
+    title: "Our Team",
+    members: [
       {
-        company: "Digital, ads & campaign marketing",
-        timeframe: "Selected results",
-        role: "Digital marketing strategy & performance management",
-        achievements: [
-          <>
-            Led a project with <strong>972.7% growth</strong>,{" "}
-            <strong>620% engagement</strong>, and
-            <strong> 1.9K organic reach</strong>.
-          </>,
-          <>
-            Optimised campaigns using <strong>SEO</strong>, <strong>SEM</strong>
-            , and influencer marketing for measurable results.
-          </>,
-          <>
-            Executed data‑driven campaigns that maximised audience engagement
-            and conversions.
-          </>,
-          <>
-            Applied advanced audience segmentation to boost ad performance and
-            ROI across channels.
-          </>,
-        ],
-        images: [
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Performance dashboard for digital campaigns",
-            width: 16,
-            height: 9,
-          },
-        ],
+        name: "Kowshik",
+        role: "Video Editor & Web Developer",
+        strength: "Motion visuals & functional web builds",
       },
       {
-        company: "Social media & brand strategy",
-        timeframe: "Selected results",
-        role: "Social media, brand awareness & campaign strategy",
-        achievements: [
-          <>
-            Boosted TikTok engagement by <strong>8%</strong> and grew followers
-            by
-            <strong> 15K+ </strong>through data‑driven strategies.
-          </>,
-          <>
-            Delivered <strong>1.4M+ organic reach</strong> and{" "}
-            <strong>100% impression growth</strong>
-            for <strong>10+ brands</strong> with 360° campaigns.
-          </>,
-          <>
-            Managed <strong>5 UGC creators</strong> and sold{" "}
-            <strong>350+ SKUs</strong>, strengthening brand loyalty.
-          </>,
-          <>
-            Optimised campaigns with real‑time analytics, supporting 5 ad‑hoc
-            projects for maximum ROI.
-          </>,
-        ],
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Social media content performance overview",
-            width: 16,
-            height: 9,
-          },
-        ],
+        name: "Suriya Giri",
+        role: "Photography & Video Specialist",
+        strength: "Visual storytelling & post-production",
       },
       {
-        company: "Business & growth strategy",
-        timeframe: "Selected results",
-        role: "Growth marketing, CRM & analytics",
-        achievements: [
-          <>
-            Achieved <strong>80%+ retention</strong> and reduced churn by{" "}
-            <strong>0.2%</strong> with targeted email and gamification
-            strategies.
-          </>,
-          <>
-            Boosted user acquisition by <strong>5% QoQ</strong> through
-            CRM‑driven onboarding and retention journeys.
-          </>,
-          <>
-            Streamlined affiliate and tactical marketing, driving measurable
-            growth and engagement.
-          </>,
-          <>
-            Leveraged A/B testing and data analysis to refine campaigns,
-            improving revenue and efficiency.
-          </>,
-        ],
-        images: [
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Growth and CRM performance charts",
-            width: 16,
-            height: 9,
-          },
-        ],
+        name: "David",
+        role: "Brand Design Expert",
+        strength: "Brand identity & visual systems",
       },
       {
-        company: "Personal projects",
-        timeframe: "Ongoing",
-        role: "Content creation & personal brand growth",
-        achievements: [
-          <>
-            Produced <strong>65+ TikTok videos</strong>, generating{" "}
-            <strong>1.5M+ impressions</strong>
-            and <strong>21K+ followers</strong>.
-          </>,
-          <>
-            Built a personal brand with <strong>415.9% traffic growth</strong>{" "}
-            and
-            <strong> 30% engagement increase</strong>.
-          </>,
-          <>
-            Collaborated with <strong>11+ brands</strong> on KOL marketing
-            strategies, driving awareness and loyalty.
-          </>,
-          <>
-            Created hard‑selling content that boosted brand visibility and
-            conversion rates.
-          </>,
-        ],
-        images: [],
+        name: "Nandhitha",
+        role: "Digital Marketing Expert",
+        strength: "Campaign strategy & performance marketing",
+      },
+      {
+        name: "Gokila",
+        role: "UI/UX Developer & Social Media Handler",
+        strength: "User experience & content execution",
       },
     ],
   },
-  studies: {
-    display: true, // set to false to hide this section
-    title: "Certifications & education",
-    institutions: [
+  beliefs: {
+    display: true,
+    title: "What We Believe",
+    values: [
+      "Design should solve business problems, not just look pretty",
+      "Marketing should be measurable and ROI-focused",
+      "Simplicity beats noise every time",
+      "Long-term partnerships matter more than quick wins",
+      "Direct communication builds trust",
+    ],
+  },
+  process: {
+    display: true,
+    title: "How We Work",
+    steps: [
       {
-        name: "Rakamin Academy – Scholarship Digital Marketing Bootcamp",
-        description: (
-          <>
-            Intensive bootcamp focused on digital marketing strategy, ads
-            management, and analytics.
-          </>
-        ),
+        number: "1",
+        title: "Understand the Brand",
+        description: "We dive deep into your business, audience, and goals to create a solid foundation for strategy.",
       },
       {
-        name: "Rakamin Academy – Advanced Social Media Marketing",
-        description: (
-          <>
-            Deep dive into TikTok, Instagram, and creator‑led campaign strategy
-            for growth.
-          </>
-        ),
+        number: "2",
+        title: "Define Strategy",
+        description: "Clear positioning, messaging, and a roadmap that aligns with your business objectives.",
       },
       {
-        name: "Coursera – Google Project Management Professional Certificate",
-        description: (
-          <>
-            Developed project planning, execution, and stakeholder management
-            skills.
-          </>
-        ),
+        number: "3",
+        title: "Design & Execute",
+        description: "Beautiful, functional designs and campaigns built to perform, whether it's ads, content, or branding.",
       },
       {
-        name: "Coursera – Google Data Analytics Professional Certificate",
-        description: (
-          <>
-            Learned data analysis, dashboards, and insight‑driven decision
-            making.
-          </>
-        ),
-      },
-      {
-        name: "Dataquest.io – Business Analyst Certification",
-        description: (
-          <>
-            Strengthened SQL, data storytelling, and business analysis
-            capabilities.
-          </>
-        ),
+        number: "4",
+        title: "Measure & Optimize",
+        description: "We track what matters, share insights, and continuously improve for better results.",
       },
     ],
   },
-  technical: {
-    display: true, // set to false to hide this section
-    title: "Skills, tools & platforms",
-    skills: [
-      {
-        title: "Digital, ads & campaign marketing",
-        description: (
-          <>
-            Planning full‑funnel campaigns, performance management, and
-            optimisation across SEO, SEM, influencer marketing, and paid ads.
-          </>
-        ),
-        tags: [
-          {
-            name: "Digital marketing strategy",
-            icon: "rocket",
-          },
-          {
-            name: "Meta & Google Ads",
-            icon: "instagram",
-          },
-        ],
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Digital ads and campaign visuals",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Social media, content & brand",
-        description: (
-          <>
-            Building content strategies, UGC collaborations, and brand systems
-            that grow followers, engagement, and long‑term awareness.
-          </>
-        ),
-        tags: [
-          {
-            name: "Content & branding",
-            icon: "document",
-          },
-          {
-            name: "Social media strategy",
-            icon: "instagram",
-          },
-        ],
-        images: [
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Social media and brand assets",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Business, CRM & growth",
-        description: (
-          <>
-            Designing growth strategies, CRM journeys, and analytics setups that
-            improve retention, lifetime value, and revenue.
-          </>
-        ),
-        tags: [
-          {
-            name: "Growth marketing",
-            icon: "rocket",
-          },
-          {
-            name: "CRM & retention",
-            icon: "document",
-          },
-        ],
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Growth and CRM strategy visuals",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Tools & analytics stack",
-        description: (
-          <>
-            Comfortable working across analytics, ads, and creative tools:
-            Google Analytics, Google Ads, Google Search Console, Google Trends,
-            Meta Ads, MoEngage, Power BI, Microsoft 365, Adobe Creative Suite,
-            Figma, and CapCut.
-          </>
-        ),
-        tags: [
-          {
-            name: "Analytics & reporting",
-            icon: "rocket",
-          },
-          {
-            name: "Meta & Google Ads",
-            icon: "instagram",
-          },
-          {
-            name: "Design & video tools",
-            icon: "figma",
-          },
-        ],
-        images: [],
-      },
+  industries: {
+    display: true,
+    title: "Industries We Work With",
+    sectors: [
+      "Education & Institutes",
+      "Textiles & Manufacturing",
+      "Real Estate",
+      "E-commerce & Startups",
+      "Personal Brands & Creators",
+      "Services & Consulting",
+    ],
+  },
+  why: {
+    display: true,
+    title: "Why Clients Choose DesignerX",
+    reasons: [
+      "Direct communication — no gatekeeping, just honest conversations",
+      "Limited clients = better focus on your success",
+      "Clean, modern execution that reflects quality",
+      "Transparent timelines and straightforward pricing",
+      "Strategic thinking paired with hands-on execution",
     ],
   },
 };

@@ -113,6 +113,28 @@ export const Header = () => {
               )}
               <Line background="neutral-alpha-medium" vert maxHeight="24" />
 
+              {/* About */}
+              {routes["/about"] && (
+                <Row s={{ hide: true }}>
+                  <ToggleButton
+                    prefixIcon="person"
+                    href="/about"
+                    label="About Us"
+                    selected={pathname === "/about"}
+                  />
+                </Row>
+              )}
+              {routes["/about"] && (
+                <Row hide s={{ hide: false }}>
+                  <ToggleButton
+                    prefixIcon="person"
+                    href="/about"
+                    selected={pathname === "/about"}
+                  />
+                </Row>
+              )}
+              <Line background="neutral-alpha-medium" vert maxHeight="24" />
+
               {/* Services (in-page anchor) */}
               <Row s={{ hide: true }}>
                 <ToggleButton

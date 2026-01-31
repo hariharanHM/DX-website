@@ -98,19 +98,20 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({
         >
           {newsletter.description}
         </Text>
+        <Row fillWidth maxWidth={24} gap="8" horizontal="center" paddingTop="8">
+          <Button
+            href="https://wa.me/916381346237"
+            target="_blank"
+            rel="noopener noreferrer"
+            size="m"
+            variant="secondary"
+            prefixIcon="whatsapp"
+            className="ctaButton"
+          >
+            Chat on WhatsApp
+          </Button>
+        </Row>
       </Column>
-
-      {/* <Row fillWidth maxWidth={24} gap="8" horizontal="center" paddingTop="8">
-        <Button
-          href={about.calendar?.link || "#"}
-          size="m"
-          variant="secondary"
-          prefixIcon="calendar"
-          className="ctaButton"
-        >
-          Book a strategy call
-        </Button>
-      </Row> */}
     </Column>
   );
 };
