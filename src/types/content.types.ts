@@ -107,110 +107,80 @@ export interface Home extends BasePageConfig {
  * About page configuration.
  * @description Configuration for the About page, including sections for table of contents, avatar, calendar, introduction, work experience, studies, and technical skills.
  */
+export type TeamMember = {
+  name: string;
+  role: string;
+  strength: string;
+};
+
+/**
+ * About page configuration (Agency-style)
+ */
 export interface About extends BasePageConfig {
-  team: any;
   /** Table of contents configuration */
   tableOfContent: {
-    /** Whether to display the table of contents */
     display: boolean;
-    /** Whether to show sub-items in the table of contents */
     subItems: boolean;
   };
+
   /** Avatar section configuration */
   avatar: {
-    /** Whether to display the avatar */
     display: boolean;
   };
+
   /** Calendar section configuration */
   calendar: {
-    /** Whether to display the calendar */
     display: boolean;
-    /** Link to the calendar */
     link: string;
   };
+
   /** Introduction section */
   intro: {
-    /** Whether to display the introduction */
     display: boolean;
-    /** Title of the introduction section */
     title: string;
-    /** Description of the introduction section */
     description: React.ReactNode;
   };
-  /** Work experience section */
-  work: {
-    /** Whether to display work experience */
+
+  /** Our Story section */
+  story: {
     display: boolean;
-    /** Title for the work experience section */
     title: string;
-    /** List of work experiences */
-    experiences: Array<{
-      /** Company name */
-      company: string;
-      /** Timeframe of employment */
-      timeframe: string;
-      /** Role or job title */
-      role: string;
-      /** Achievements at the company */
-      achievements: React.ReactNode[];
-      /** Images related to the experience */
-      images?: Array<{
-        /** Image source path */
-        src: string;
-        /** Image alt text */
-        alt: string;
-        /** Image width ratio */
-        width: number;
-        /** Image height ratio */
-        height: number;
-      }>;
-    }>;
+    description: React.ReactNode;
   };
-  /** Studies/education section */
-  studies: {
-    /** Whether to display studies section */
+
+  /** Our Team section */
+  team: {
     display: boolean;
-    /** Title for the studies section */
     title: string;
-    /** List of institutions attended */
-    institutions: Array<{
-      /** Institution name */
-      name: string;
-      /** Description of studies */
-      description: React.ReactNode;
-    }>;
+    members: TeamMember[];
   };
-  /** Technical skills section */
-  technical: {
-    /** Whether to display technical skills section */
+
+  /** How we work (optional) */
+  process?: {
     display: boolean;
-    /** Title for the technical skills section */
     title: string;
-    /** List of technical skills */
-    skills: Array<{
-      /** Skill title */
+    steps: Array<{
+      number: string;
       title: string;
-      /** Skill description */
-      description?: React.ReactNode;
-      /** Skill tags */
-      tags?: Array<{
-        name: string;
-        icon?: string;
-      }>;
-      /** Images related to the skill */
-      images?: Array<{
-        /** Image source path */
-        src: string;
-        /** Image alt text */
-        alt: string;
-        /** Image width ratio */
-        width: number;
-        /** Image height ratio */
-        height: number;
-      }>;
+      description: string;
     }>;
+  };
+
+  /** Industries served (optional) */
+  industries?: {
+    display: boolean;
+    title: string;
+    sectors: string[];
+  };
+
+  /** Why choose us (optional) */
+  why?: {
+    display: boolean;
+    title: string;
+    reasons: string[];
   };
 }
+
 
 /**
  * Work/projects page configuration.
