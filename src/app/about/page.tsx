@@ -36,21 +36,21 @@ export default function About() {
       display: about.intro.display,
       items: [],
     },
-    {
-      title: about.story.title,
-      display: about.story.display,
-      items: [],
-    },
+    // {
+    //   title: about.story.title,
+    //   display: about.story.display,
+    //   items: [],
+    // },
     {
       title: about.team.title,
       display: about.team.display,
       items: about.team.members.map((member) => member.name),
     },
-    {
-      title: about.beliefs.title,
-      display: about.beliefs.display,
-      items: [],
-    },
+    // {
+    //   title: about.beliefs.title,
+    //   display: about.beliefs.display,
+    //   items: [],
+    // },
     {
       title: about.process.title,
       display: about.process.display,
