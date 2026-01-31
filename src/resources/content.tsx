@@ -104,6 +104,12 @@ const about: About = {
       </>
     ),
   },
+  story: {
+  display: false,
+  title: "Our Story",
+  description: null,
+},
+
   // story: {
   //   display: true,
   //   title: "Our Story",
