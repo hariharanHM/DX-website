@@ -167,9 +167,6 @@ export const Header = () => {
                   label="Projects"
                 />
               </Row> */}
-              <Row hide s={{ hide: false }}>
-                <ToggleButton prefixIcon="briefcase" href="/#projects" />
-              </Row>
 
               {display.themeSwitcher && (
                 <>
