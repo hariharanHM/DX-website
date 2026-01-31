@@ -190,6 +190,16 @@
     transform: scale(1.05);
   }
 }
+.brandTitle {
+  color: var(--neutral-on-background-strong);
+  transition: color 0.3s ease;
+}
+
+/* Dark mode override */
+:global(.dark) .brandTitle {
+  color: #ffffff;
+}
+
 
 .heroName {
   background: linear-gradient(

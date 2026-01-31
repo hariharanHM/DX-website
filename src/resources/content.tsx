@@ -11,8 +11,8 @@ import { Line, Row, Text } from "@once-ui-system/core";
 const person: Person = {
   firstName: "Hariharan",
   lastName: "C",
-  name: "Hariharan C",
-  role: "Designer & Marketing Strategist",
+  name: "HARIHARAN C",
+  role: "Founder & CEO",
   avatar: "/images/avatar.jpg",
   email: "designerx1111@gmail.com",
   // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'.

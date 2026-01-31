@@ -37,7 +37,7 @@ if (!envSiteUrl && ghRepo) {
 // Enable only the core routes needed for a focused marketing portfolio
 const routes: RoutesConfig = {
   "/": true,
-  "/about": false,
+  "/about": true,
   "/work": false, // Projects are shown on home page via scroll
 };
 
@@ -55,25 +55,28 @@ const protectedRoutes: ProtectedRoutesConfig = {
 };
 
 // Import and set font for each variant
-import { Geist } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { Geist_Mono } from "next/font/google";
 
-const heading = Geist({
+const heading = Montserrat({
   variable: "--font-heading",
   subsets: ["latin"],
   display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const body = Geist({
+const body = Montserrat({
   variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
-const label = Geist({
+const label = Montserrat({
   variable: "--font-label",
   subsets: ["latin"],
   display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
 const code = Geist_Mono({

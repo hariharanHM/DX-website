@@ -29,93 +29,61 @@ export const HeroSection = () => {
       gap="l"
       horizontal="center"
       className={styles.heroSection}
-      paddingY="32"
+      paddingY="16"
       paddingX="l"
     >
-      <Row fillWidth className={styles.heroContent}>
-        {/* Left: logo, headline and intro copy */}
-        <Column gap="m" align="start" className={styles.heroCopy}>
-          <Row vertical="center">
-            <Image
-              src={withBasePath("/images/DesignerX-logo.png")}
-              alt="DesignerX logo"
-              width={170}
-              height={95}
-              priority={false}
-              style={{ objectFit: "contain", display: "block" }}
-            />
-          </Row>
-          <Heading
-            variant="display-strong-m"
-            align="left"
-            className={styles.heroHeadline}
-          >
-            {home.headline}
-          </Heading>
-          <Text
-            variant="heading-default-l"
-            onBackground="neutral-weak"
-            align="left"
-          >
-            {home.subline}
-          </Text>
-        </Column>
+      {/* Logo in top left */}
+      <Row fillWidth paddingBottom="l" horizontal="start">
+        <Image
+          src={withBasePath("/images/DesignerX-logo.png")}
+          alt="DesignerX logo"
+          width={120}
+          height={67}
+          priority={false}
+          style={{ objectFit: "contain", display: "block" }}
+        />
+      </Row>
 
-        {/* Right: avatar, name, social, CTA */}
-        <Column
-          gap="m"
-          horizontal="center"
-          align="start"
-          className={styles.heroProfile}
+      {/* Centered content */}
+      <Column
+        fillWidth
+        gap="m"
+        horizontal="center"
+        align="center"
+        style={{ textAlign: "center" }}
+      >
+        <Heading
+          variant="display-strong-xl"
+          align="center"
+          className={styles.brandTitle}
+          // style={{ color: "#000000" }}
         >
-          {about.avatar.display && (
-            <Column className={styles.avatarWrapper} gap="0">
-              <div className={styles.avatarGlow}>
-                <Avatar src={withBasePath(person.avatar)} size="xl" />
-              </div>
-              <div className={styles.floatingLogos} aria-hidden>
-                <img
-                  src={withBasePath("/images/meta-logo.png")}
-                  alt=""
-                  className={styles.floatingLogo}
-                  width={44}
-                  height={44}
-                />
-                <img
-                  src={withBasePath("/images/seo-logo.png")}
-                  alt=""
-                  className={styles.floatingLogo}
-                  width={36}
-                  height={36}
-                />
-                <img
-                  src={withBasePath("/images/social-logo.png")}
-                  alt=""
-                  className={styles.floatingLogo}
-                  width={32}
-                  height={32}
-                />
-                <img
-                  src={withBasePath("/images/camera-logo.png")}
-                  alt=""
-                  className={styles.floatingLogo}
-                  width={28}
-                  height={28}
-                />
-              </div>
-            </Column>
-          )}
+          DESIGNERX
+        </Heading>
+        <Heading
+          variant="display-strong-m"
+          align="center"
+          className={styles.heroHeadline}
+        >
+          {home.headline}
+        </Heading>
+        <Text
+          variant="heading-default-l"
+          onBackground="neutral-weak"
+          align="center"
+        >
+          {home.subline}
+        </Text>
+      </Column>
 
-          <Column gap="8" horizontal="center" align="center">
-            <Heading
-              variant="display-strong-l"
-              align="center"
-              className={styles.heroName}
-            >
-              {person.name}
-            </Heading>
-          </Column>
-
+      {/* Right: social and CTA - kept for contact info */}
+      <Column
+        gap="m"
+        horizontal="center"
+        align="center"
+        paddingTop="l"
+        className={styles.heroProfile}
+      >
           {social.length > 0 && (
             <Row
               gap="8"
@@ -159,30 +127,6 @@ export const HeroSection = () => {
             </Row>
           )}
 
-          {/*
-          <Row gap="8" wrap horizontal="center" paddingTop="8">
-            {about.calendar.display && (
-              <Button
-                href={about.calendar.link}
-                size="m"
-                variant="primary"
-                prefixIcon="calendar"
-                className={styles.ctaButton}
-              >
-                Schedule a call
-              </Button>
-            )}
-            <Button
-              href={`mailto:${person.email}`}
-              size="m"
-              variant="secondary"
-              prefixIcon="email"
-            >
-              Get in touch
-            </Button>
-          </Row>
-          */}
-
           <Row
             gap="8"
             wrap
@@ -208,7 +152,7 @@ export const HeroSection = () => {
             />
           </Row>
         </Column>
-      </Row>
+      
     </Column>
   );
 };
