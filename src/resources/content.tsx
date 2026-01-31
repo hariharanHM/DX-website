@@ -104,15 +104,15 @@ const about: About = {
       </>
     ),
   },
-  story: {
-    display: true,
-    title: "Our Story",
-    description: (
-      <>
-        DesignerX was founded with a simple belief — good design and marketing should be practical, measurable, and scalable. What started as a solo creative journey has evolved into a growing design studio working with brands across industries. We partner with businesses that value clarity, quality execution, and real results over noise and shortcuts.
-      </>
-    ),
-  },
+  // story: {
+  //   display: true,
+  //   title: "Our Story",
+  //   description: (
+  //     <>
+  //       DesignerX was founded with a simple belief — good design and marketing should be practical, measurable, and scalable. What started as a solo creative journey has evolved into a growing design studio working with brands across industries. We partner with businesses that value clarity, quality execution, and real results over noise and shortcuts.
+  //     </>
+  //   ),
+  // },
   team: {
     display: true,
     title: "Our Team",
@@ -144,17 +144,17 @@ const about: About = {
       },
     ],
   },
-  beliefs: {
-    display: true,
-    title: "What We Believe",
-    values: [
-      "Design should solve business problems, not just look pretty",
-      "Marketing should be measurable and ROI-focused",
-      "Simplicity beats noise every time",
-      "Long-term partnerships matter more than quick wins",
-      "Direct communication builds trust",
-    ],
-  },
+  // beliefs: {
+  //   display: true,
+  //   title: "What We Believe",
+  //   values: [
+  //     "Design should solve business problems, not just look pretty",
+  //     "Marketing should be measurable and ROI-focused",
+  //     "Simplicity beats noise every time",
+  //     "Long-term partnerships matter more than quick wins",
+  //     "Direct communication builds trust",
+  //   ],
+  // },
   process: {
     display: true,
     title: "How We Work",

@@ -220,7 +220,7 @@ export default function About() {
             </Column>
           )}
 
-          {about.story.display && (
+          {/* {about.story.display && (
             <Column fillWidth gap="m" marginBottom="xl">
               <Heading as="h2" id={about.story.title} variant="display-strong-s" marginBottom="m">
                 {about.story.title}
@@ -229,7 +229,7 @@ export default function About() {
                 {about.story.description}
               </Text>
             </Column>
-          )}
+          )} */}
 
           {about.team.display && (
             <Column fillWidth gap="l" marginBottom="xl">
@@ -252,7 +252,7 @@ export default function About() {
             </Column>
           )}
 
-          {about.beliefs.display && (
+          {/* {about.beliefs.display && (
             <Column fillWidth gap="l" marginBottom="xl">
               <Heading as="h2" id={about.beliefs.title} variant="display-strong-s" marginBottom="m">
                 {about.beliefs.title}
@@ -269,7 +269,7 @@ export default function About() {
                 ))}
               </Column>
             </Column>
-          )}
+          )} */}
 
           {about.process.display && (
             <Column fillWidth gap="l" marginBottom="xl">
