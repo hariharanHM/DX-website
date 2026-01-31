@@ -155,8 +155,8 @@ export interface About extends BasePageConfig {
     members: TeamMember[];
   };
 
-  /** How we work (optional) */
-  process?: {
+  /** How we work */
+  process: {
     display: boolean;
     title: string;
     steps: Array<{
@@ -166,18 +166,25 @@ export interface About extends BasePageConfig {
     }>;
   };
 
-  /** Industries served (optional) */
-  industries?: {
+  /** Industries served */
+  industries: {
     display: boolean;
     title: string;
     sectors: string[];
   };
 
-  /** Why choose us (optional) */
-  why?: {
+  /** Why choose us */
+  why: {
     display: boolean;
     title: string;
     reasons: string[];
+  };
+
+  /** What we believe */
+  beliefs?: {
+    display: boolean;
+    title: string;
+    values: string[];
   };
 }
 

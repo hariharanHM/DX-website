@@ -107,6 +107,7 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({
             variant="secondary"
             prefixIcon="whatsapp"
             className="ctaButton"
+            style={{ backgroundColor: "#ffffff", color: "#000000" }}
           >
             Chat on WhatsApp
           </Button>
