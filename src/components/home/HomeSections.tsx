@@ -8,8 +8,8 @@ import styles from "./HomeSections.module.scss";
 export const HomeSections = () => {
   return (
     <Column fillWidth gap="xl">
-      {/* Experience & Results Cards */}
-      {about.work.display && (
+      {/* Experience & Results Cards - Removed */}
+      {/* {about.work.display && (
         <Column id="experience-results" fillWidth gap="xl" paddingTop="xl">
           <Column gap="12" horizontal="center" align="center">
             <Heading as="h2" variant="display-strong-l" align="center">
@@ -123,7 +123,7 @@ export const HomeSections = () => {
             ))}
           </div>
         </Column>
-      )}
+      )} */}
 
       {/* Skills, Tools & Platforms (removed) */}
 
